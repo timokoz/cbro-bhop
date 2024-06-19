@@ -10,7 +10,7 @@ RunService.RenderStepped:Connect(function()
 if _G.Bhop == true then
 if LocalPlayer.Character ~= nil and UserInputService:IsKeyDown(Enum.KeyCode.Space) and LocalPlayer.PlayerGui.GUI.Main.GlobalChat.Visible == false then
 LocalPlayer.Character.Humanoid.Jump = true
-local Speed = _G.BhopSpeed or 100
+local Speed = _G.BhopSpeed or 30
 local Dir = Camera.CFrame.LookVector * Vector3.new(1, 0, 1)
 local Move = Vector3.new()
 
